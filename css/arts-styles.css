@@ -8,6 +8,7 @@
     text-align: center;
     color: #fff;
     margin-top: 10%;
+    
 }
 
 .behance-section::before {
@@ -95,6 +96,7 @@ p {
     text-align: center;
     color: #fff;
     margin-top: 10%;
+    margin-bottom: 5%;
   }
   .section-gallery p{
     color: rgb(190, 190, 190);
@@ -196,7 +198,7 @@ p {
   #back-to-top-btn {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     right: 50px;
     font-size: 16px;
     background-color: #3f3f3f;
@@ -205,6 +207,7 @@ p {
     padding: 10px 15px;
     border-radius: 50px;
     cursor: pointer;
+
   }
   
   #back-to-top-btn:hover {

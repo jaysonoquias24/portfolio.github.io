@@ -8,6 +8,7 @@
     text-align: center;
     color: #fff;
     margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .behance-section::before {
@@ -71,7 +72,7 @@ p {
 #back-to-top-btn {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     right: 50px;
     font-size: 16px;
     background-color: #3f3f3f;
