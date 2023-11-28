@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jayson Oquias- Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<style>
+		/* Add your desired styles here */
+		#typing-container {
+		  font-family: 'Arial', sans-serif;
+		  font-size: 24px;
+		  border-right: 2px solid #000;
+		  white-space: nowrap;
+		  overflow: hidden;
+		}
+		
+	  </style>
+	  <script>
+		document.addEventListener('DOMContentLoaded', function () {
+		  const professions = ['IT Student', 'Graphic Designer', 'UI/UX Designer', 'Front-end Developer'];
+		  let currentProfessionIndex = 0;
+		  let currentTextIndex = 0;
+		  let isDeleting = false;
+	
+		  function type() {
+			const currentText = professions[currentProfessionIndex];
+			const typingContainer = document.getElementById('typing-container');
+			let speed = 100;
+	
+			if (isDeleting) {
+			  speed /= 2;
+			  typingContainer.textContent = currentText.substring(0, currentTextIndex - 1);
+			} else {
+			  typingContainer.textContent = currentText.substring(0, currentTextIndex + 1);
+			}
+	
+			if (!isDeleting && currentTextIndex === currentText.length) {
+			  isDeleting = true;
+			  speed = 500;
+			} else if (isDeleting && currentTextIndex === 0) {
+			  isDeleting = false;
+			  currentProfessionIndex = (currentProfessionIndex + 1) % professions.length;
+			}
+	
+			currentTextIndex += isDeleting ? -1 : 1;
+	
+			setTimeout(type, speed);
+		  }
+	
+		  type(); // Start typing on page load
+		});
+	  </script>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">J.O</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		<div class="container">
+		  <div class="flex-container">
+			<div class="hero-text">
+			  <span class="subheading">Hello!</span>
+			  <h1 class="mb-4 mt-3">I'm <span>Jayson Oquias</span></h1>
+			  <h2 class="mb-4" id="typing-container"></h2>
+			  <p class="hero-description">As a 4th-year IT student with a specialization in Multimedia Arts and Animations, I am passionate about creating visually stunning and interactive experiences. My skills range from graphic design to user interface and experience design, and I bring them together to craft seamless and engaging websites.</p>
+			</div>
+			<div class="hero-image">
+			  <img src="images/bg-1.png" width="100%" alt="Hero Image">
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+	  
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="marquee-container" style="margin-bottom: 40px;">
+			<div class="marquee-wrapper">
+			  <div class="marquee-text">
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				
+			  </div>
+			  <div class="marquee-text">
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+				Get to know <span>me</span> &nbsp;&nbsp;
+			  </div>
+			</div>
+		  </div>
+    	<div class="container">
+			
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.png);">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">About</h1>
+		            <h2 class="mb-4">About Me</h2>
+		            <p>Embarking on my fourth year at National University, Manila, I am Jayson Oquias—a dedicated student pursuing a Bachelor of Science in Information Technology with a specialized focus on multimedia arts and animations. The privilege of being part of the esteemed Internal Scholarship (Blue Scholarship) program has not only enabled me to study at a prestigious institution but has also fueled my commitment to personal and academic growth. With gratitude as my compass, I approach every endeavor with diligence, ensuring each step forward is a testament to the opportunities afforded by dedication and hard work.</p>
+		            <ul class="about-info mt-4 px-md-0 px-2">
+		            	<li class="d-flex"><span>Name:</span> <span>Jayson Rhod R. Oquias</span></li>
+		            	<li class="d-flex"><span>Date of birth:</span> <span>July 24, 2001</span></li>
+		            	<li class="d-flex"><span>Address:</span> <span>10 Diamond St. Sto Nino Marikina City</span></li>
+		            	<li class="d-flex"><span>Zip code:</span> <span>1800</span></li>
+		            	<li class="d-flex"><span>Email:</span> <span>oquiasjayson.email@gmail.com</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>+63 9397397022</span></li>
+		            </ul>
+		          </div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+				  <p>
+                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-2">
+					<li class="ftco-animate"><a href="https://www.linkedin.com/in/jayson-rhod-oquias-aa8b32299/"><span class="icon-linkedin"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.facebook.com/jiswaniii/"><span class="icon-facebook"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.instagram.com/o_jiswan/"><span class="icon-instagram"></span></a></li>
+				 <a href="cv/oquiasjr-cv.pdf" download target="_blank" class="btn btn-primary py-3 px-3 mt-n5">Download CV</a> </p>
+				</ul>
+				
+              </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+	<div class="marquee-container2">
+		<div class="marquee-wrapper2">
+		  <div class="marquee-text2">
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			
+		  </div>
+		  <div class="marquee-text2">
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+			Get to know <span>me</span> &nbsp;&nbsp;
+		  </div>
+		</div>
+	  </div>
+
+
+		
+		<section class="ftco-section" id="skills-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Skills</h1>
+            <h2 class="mb-4">My Skills</h2>
+            <p>With a diverse skill set, I bring a blend of creativity and technical expertise to the table, making a positive impact on any project.</p>
+          </div>
+        </div>
+		<h2 class="mb-4">Soft Skills</h2>
+				<div class="row">
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>• Teamwork</h3>
+							
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>• Decision-Making</h3>
+							
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>• Creativity</h3>
+							
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>• Adaptibility / Flexibility</h3>
+							
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>• Problem-Solving</h3>
+							
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>• Resilience</h3>
+							
+						</div>
+					</div>
+				</div>
+				<br>
+				<h2 class="mb-4">Hard Skills</h2>
+				<div class="row">
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Photoshop & Illustrator</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
+							    <span>95%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Canva</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+							    <span>85%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>HTML, CSS, & PHP</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
+							    <span>95%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Figma & Webflow</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="75"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+							    <span>75%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Digital Drawing / Illustration</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="90"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+							    <span>90%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Web Design</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+							    <span>80%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Blender/h3>
+							<div class="progress">
+							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+							    <span>70%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+		</section>
+ 
+
+    <section class="ftco-section ftco-project" id="projects-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Top Projects</h2>
+            <p>In the realm of creativity, I find my home. With a team of visionaries, we turn ideas into masterpieces, each project a testament to the power of collaboration and innovation.</p>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/coffee.png);filter: brightness(0.80);" >
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+	    					<span>A Practice Branding Design (Cafe' & Chocolate Bar)</span><br><br>
+							<span><a href="cafe.html"  style="COLOR:BLUE !important; border:1px solid black; border-radius: 10px; padding:5px;" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">--VIEW--</a></span>
+	    				</div>
+    				</div>
+  				</div>
+  				<div class="col-md-8">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/taralaro.png); filter: brightness(0.80);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>3D Animations &amp; Web Development</h3>
+	    					<span>CAPSTONE PROJECT</span> <br><br>
+							<span><a href="capstone.html" style="COLOR:BLUE !important; border:1px solid black; border-radius: 10px; padding:5px;" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">--VIEW--</a></span>
+	    				</div>
+    				</div>
+  				</div>
+
+    			<div class="col-md-8">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/kmerch.png); filter: brightness(0.80);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>Branding &amp; Website</h3>
+	    					<span>Web E-commerce Design</span><br><br>
+							<span><a href="kmerch.html" style="COLOR:BLUE !important; border:1px solid black; border-radius: 10px; padding:5px;" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">--VIEW--</a></span>
+	    				</div>
+    				</div>
+
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/mathcookie.png); filter: brightness(0.80);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>App Design (Android Studio)</h3>
+	    					<span>Mobile Application</span> <br><br>
+							<span><a href="mobile.html" style="COLOR:BLUE !important; border:1px solid black; border-radius: 10px; padding:5px;" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">--VIEW--</a></span>
+							
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="row">
+    					<div class="col-md-12">
+		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/gallery.png); filter: brightness(0.80);">
+		    					<div class="overlay"></div>
+			    				<div class="text text-center p-4">
+			    					<h3><a href="#">Character Design  &amp; Digital Drawing </h3>
+			    					<span>Arts & Design</span> <br><br>
+									<span><a href="arts.html" style="COLOR:BLUE !important; border:1px solid black; border-radius: 10px; padding:5px;" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">--VIEW--</a></span>
+			    				</div>
+		    				</div>
+	    				</div>
+	    				<div class="col-md-12">
+		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/card.png); filter: brightness(0.80);">
+		    					<div class="overlay"></div>
+			    				<div class="text text-center p-4">
+			    					<h3>Designing in Illustrator</h3>
+			    					<span>Business Card Design</span>
+			    				</div>
+		    				</div>
+	    				</div>
+    				</div>
+    			</div>
+				
+				<div class="col-md-6">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/katechy.png); filter: brightness(0.80);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">IT Problem-Solving</a></h3>
+	    					<span>Fact Checking Web Application</span><br><br>
+							<span><a href="katechy.html"  style="COLOR:BLUE !important; border:1px solid black; border-radius: 10px; padding:5px;" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">--VIEW--</a></span>
+	    				</div>
+    				</div>
+  				</div>
+  				<div class="col-md-6">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/link.png); filter: brightness(0.80);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3> Mobile Platform</h3>
+	    					<span>Emergency Preparedness and Disaster Mitigation</span> <br><br> 
+							<span><a href="linking.html" style="COLOR:BLUE !important; border:1px solid black; border-radius: 10px; padding:5px; " onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'" >--VIEW--</a></span>
+	    				</div>
+    				</div>
+  				</div>
+
+    		</div>
+    	</div>
+    </section>
+
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Let's connect and turn ideas into reality. Reach out, and let's bring your vision to life together.</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>10 Diamond St, Sto Nino Marikina City</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://09397397022">+63 9397397022</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:oquiasjayson.email@gmail.com">oquiasjayson.email@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Website</h3>
+	            <p><a href="#">yoursite.com</a></p>
+	          </div>
+          </div>
+        </div>
+
+        
+    </section>
+		<br>
+		<br>
+		<br>
+		<br>
+    <footer class="ftco-footer ftco-section" style="background-color: rgb(27, 27, 27) !important;">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib </a>& Modify by Jayson Oquias
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
