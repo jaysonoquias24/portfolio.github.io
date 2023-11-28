@@ -30,7 +30,11 @@
 		  white-space: nowrap;
 		  overflow: hidden;
 		}
+		.idpic{
+			display: none;
+		}
 		@media (max-width: 768px) {
+			
     	.ftco-footer-social li {
 			margin-bottom: 10px; }
 		
@@ -45,21 +49,38 @@
 		}
 		}
 		@media (max-width: 894px) {
+			
     	.ftco-footer-social li {
 			margin-bottom: 50px;
 		}
 		}
 		@media (max-width: 576px) {
+			
 			.ftco-footer-social li {
 			margin-bottom: 0px;
 		}
 	}
 		@media (max-width: 368px) {
+			
 			.about-desc{
 				text-align: center !important;
 			}
 			.ftco-footer-social li {
-			margin-bottom: 50px; }
+			margin-bottom: 50px; 
+		}
+
+			.hero-image img{
+				display:none;
+			}
+			.idpic{
+				display: block;
+				width: 70%;
+				border-radius: 50%;
+				margin-bottom: 55%;
+				
+				margin-left: 50px;
+				border: 0.5px solid white;
+			}
 		}
 		
 		
@@ -133,6 +154,7 @@
 			<div class="hero-image">
 			  <img src="images/bg-1.png" width="100%" alt="Hero Image">
 			</div>
+			<img src="images/jays-removebg.png" width="100%" class="idpic" >
 		  </div>
 		</div>
 	  </section>
