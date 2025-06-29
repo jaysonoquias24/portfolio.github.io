@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/zenzest-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <title>Collaterals Gallery</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .tab {
+      padding: 12px 20px;
+      margin: 5px;
+      background-color: #333;
+      border: 2px solid transparent;
+      color: #ffc107;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 10px 10px 0 0;
+      transition: all 0.3s ease;
+    }
+
+    .tab.active {
+      background-color: #000;
+      border-color: #ffc107;
+      color: #ffc107;
+    }
+
+    .tab-content {
+      display: none;
+      background: #111;
+      padding: 20px 30px;
+      border: 2px solid transparent;
+      border-radius: 0 0 10px 10px;
+      max-width: 1200px;
+      margin: 0 auto 40px;
+      min-height: 500px;
+      width: 100%;
+    }
+
+    .tab-content.active {
+      display: block;
+      border-color: #ffc107;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 0 0 20px;
+      color: #ffc107;
+    }
+
+    .gallery {
+      columns: 3 200px;
+      column-gap: 15px;
+      padding: 10px 0;
+    }
+
+    .image-wrapper {
+      position: relative;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: block;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 2px solid #222;
+      transition: transform 0.3s ease;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .image-wrapper:hover {
+      transform: scale(1.03);
+      border-color: #ffc107;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+      display: flex;
+      align-items: flex-end;
+      justify-content: start;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 0 0 8px 8px;
+      pointer-events: none;
+    }
+
+    .overlay span {
+      color: #ffc107;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .lightbox {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      padding: 20px;
+    }
+
+    .lightbox img {
+      width: auto;
+      height: auto;
+      max-width: 95vw;
+      max-height: 95vh;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #ffc107;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+    .image-wrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out; /* added for pop in/out */
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05); /* pop in */
+}
+
+    @media (max-width: 768px) {
+      .gallery {
+        columns: 2 150px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        columns: 1 100%;
+      }
+
+      .tab-content {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">J.O</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="index.html#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+      <a href="index.html#projects-section" class="back" title="Back">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+
+      <section class="behance-section">
+    
+        <div class="content">
+            <h1>Brand & Marketing Collaterals</h1><br>
+            <h5>Zen Zest Asia Inc.</h5>
+            <h6>( OCTOBER 2024 - PRESENT )</h6><BR>
+              <P><CENTER><I>This section features some of my best brand and marketing collaterals created during my time at Zen Zest Asia Inc. (October 2024 – Present). The number of artworks displayed is not yet final and may be updated to reflect more recent works.</I></CENTER></P>
+
+
+        </div>
+      </section>
+
+  <div class="tabs">
+    <div class="tab active" onclick="openTab(event, 'zz')">ZZ COLLATERALS</div>
+    <div class="tab" onclick="openTab(event, 'ss')">SS COLLATERALS</div>
+    <div class="tab" onclick="openTab(event, 'socmed')">SOCMED</div>
+    <div class="tab" onclick="openTab(event, 'labels')">LABELS / SAMPLE MOCKUPS</div>
+    <div class="tab" onclick="openTab(event, 'mockups')">3D</div>
+    <div class="tab" onclick="openTab(event, 'cj')">PRODUCT SHOOTS</div>
+    <div class="tab" onclick="openTab(event, 'actual')">Actual Artworks</div>
+  </div>
+
+  <!-- ZZ COLLATERALS -->
+  <div id="zz" class="tab-content active">
+    <h2>POSTERS / POP FOR ZENZEST</h2>
+    <div class="gallery">
+      <div class="image-wrapper"><img src="images/zenzest/ZZ/ZZ BACK2SCHOOL & RAINY DAY (1).png"><div class="overlay"><span>BACK 2 SCHOOL POSTER</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/ZZ/ZZ FEB POP.png"><div class="overlay"><span>FEBRUARY 2025 POSTER </span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/ZZ/ZZ POP RAINY DAY.png"><div class="overlay"><span>RAINY DAY SEASON POSTER</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/ZZ/ZZ POP MOTHERS DAY (1).png"><div class="overlay"><span>MOTHERS DAY POSTER</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/ZZ/APPROVED ZZ SUMMER POP.png"><div class="overlay"><span>SUMMER 2025 POSTER</span></div></div>
+    </div>
+  </div>
+
+  <!-- SS COLLATERALS -->
+  <div id="ss" class="tab-content">
+    <h2>POSTERS / POP FOR SCENT STATION</h2>
+    <div class="gallery">
+      <div class="image-wrapper"><img src="images/zenzest/SS/REVISED SS HOLIDAY POP-1.png"><div class="overlay"><span>HOLIDAY 2024 POSTER</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SS/SS Back to School POP.png"><div class="overlay"><span>BACK 2 SCHOOL POSTER</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SS/SS SUMMER POP 2025.png"><div class="overlay"><span>SUMMER 2025 POSTER</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SS/Happy Father’s Day POP.png"><div class="overlay"><span>FATHERS' DAY POSTER</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SS/POP (5).png"><div class="overlay"><span>MOTHERS' DAY POSTER</span></div></div>
+
+    </div>
+  </div>
+
+  <!-- SOCMED -->
+  <div id="socmed" class="tab-content">
+    <h2>POSTINGS</h2>
+    <div class="gallery">
+      <div class="image-wrapper"><img src="images/zenzest/SOCMED/_ ZZ SPACE SPRITZ.png"><div class="overlay"><span>POSTING FOR RAFFLE</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SOCMED/mothers day sale ig.gif"><div class="overlay"><span>STORY/REELS GIF POSTING</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SOCMED/study 2_posting 2.png"><div class="overlay"><span>NEW LINE PERFUME POSTIBG</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SOCMED/FB COVER FEB.png"><div class="overlay"><span>VALENTINES' DAY COVER PHOTO</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SOCMED/FB COVER SUMMER SS.png"><div class="overlay"><span>SS SUMMER COVER PHOTO</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SOCMED/FB COVER WOMENS MONTH.png"><div class="overlay"><span>WOMENS' MONTH COVER PHOTO</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SOCMED/FB COVER SUMMER ZZ.png"><div class="overlay"><span>ZZ SUMMER COVER PHOTO</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SOCMED/TOP SCENT.gif"><div class="overlay"><span>TOP SCENTS</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/SOCMED/LIVE MATERIALS.gif"><div class="overlay"><span>LIVE MATERIAL</span></div></div>
+    </div>
+  </div>
+
+  <!-- LABELS -->
+  <div id="labels" class="tab-content">
+    <h2>LABELS / SAMPLE MOCKUPS</h2>
+    <div class="gallery">
+      <div class="image-wrapper"><img src="images/zenzest/LABEL MOCKUP/CLEARANCE SALE.png"><div class="overlay"><span>LABEL FOR CLEARANCE SALE</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/LABEL MOCKUP/paper bag design 1.png"><div class="overlay"><span>PAPER BAG DESIGN STUDY</span></div></div>
+      
+    </div>
+  </div>
+
+  <!-- MOCKUPS -->
+  <div id="mockups" class="tab-content">
+    <h2>INITIAL 3D MOCK UPS</h2>
+    <div class="gallery">
+      <div class="image-wrapper"><img src="images/zenzest/3D/BOX FOR PR.png"><div class="overlay"><span>PR BOX STUDY</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/3D/HD RACK.png"><div class="overlay"><span>HANGGING DIFFUSER RACK</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/3D/WBO RACK.png"><div class="overlay"><span>WATER BASED-OIL RACK</span></div></div>
+    </div>
+  </div>
+
+  <!-- CJ -->
+  <div id="cj" class="tab-content">
+    <h2>CASA JUAN PRODUCT SHOOTS</h2>
+    <div class="gallery">
+      <div class="image-wrapper"><img src="images/zenzest/PRODUCT SHOOT/SANSO PLATES W BOX.png"><div class="overlay"><span>CASA JUAN - SANSO PLATES</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/PRODUCT SHOOT/SANSO TRAY - 3 (2).png"><div class="overlay"><span>CASA JUAN - SANSO TRAY </span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/PRODUCT SHOOT/SANSO TRAY -1(2).png"><div class="overlay"><span>CASA JUAN - SANSO TRAY</span></div></div>
+    </div>
+  </div>
+
+  <!-- Actual -->
+  <div id="actual" class="tab-content">
+    <h2>Actual Artworks</h2>
+    <div class="gallery">
+      <div class="image-wrapper"><img src="images/zenzest/ACTUAL/HOLIDAY POSTER.jpg"><div class="overlay"><span>HOLIDAY POSTER</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/ACTUAL/IMG_1703.png"><div class="overlay"><span>TARPULIN THANKSGIVING DESIGN HAWAIIAN </span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/ACTUAL/POSTING SM.png"><div class="overlay"><span>SM POSTING</span></div></div>
+      <div class="image-wrapper"><img src="images/zenzest/ACTUAL/SS POSTER STORE.jpg"><div class="overlay"><span>SS STORE POSTER</span></div></div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Preview">
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function openTab(evt, tabId) {
+      const tabs = document.querySelectorAll(".tab");
+      const contents = document.querySelectorAll(".tab-content");
+
+      tabs.forEach(tab => tab.classList.remove("active"));
+      contents.forEach(content => content.classList.remove("active"));
+
+      document.getElementById(tabId).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = lightbox.querySelector("img");
+
+    document.querySelectorAll('.image-wrapper').forEach(wrapper => {
+      wrapper.addEventListener('click', () => {
+        const img = wrapper.querySelector('img');
+        lightboxImg.src = img.src;
+        lightbox.classList.add("active");
+      });
+    });
+
+    lightbox.addEventListener("click", () => {
+      lightbox.classList.remove("active");
+    });
+  </script>
+
+</body>
+</html>
